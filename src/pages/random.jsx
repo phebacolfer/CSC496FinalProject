@@ -10,7 +10,7 @@ import {
 // Usage example in a GatsbyJS component
 const Random = () => {
 
-    const randomNumberInt = Math.floor(Math.random() * 2) + 1;
+    const randomNumberInt = Math.floor(Math.random() * 4) + 1;
     const randomNumber = randomNumberInt.toString();
 
     const data = useStaticQuery(graphql`

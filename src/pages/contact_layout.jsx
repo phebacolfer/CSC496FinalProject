@@ -1,9 +1,7 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import {
   container, text
 } from './contact_layout.module.css'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const ContactLayout = ({ }) => {
   return (

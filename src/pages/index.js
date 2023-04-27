@@ -1,12 +1,14 @@
 import * as React from 'react'
-import Layout from '../pages/layout'
-// import WelcomeLayout from '../pages/welcome_layout'
+import Layout from './layout'
+import IndexLayout from './index_layout'
 
 const IndexPage = () => {
   return (
     <div>
     <Layout pageTitle="Welcome">
     </Layout>
+    <IndexLayout>
+    </IndexLayout>
     </div>
   )
 }
