@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../layout'
 import Seo from '../seo'
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 import {
   grid_container, grid_item
 } from './index.module.css'
