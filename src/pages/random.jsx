@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../pages/layout'
 import Seo from '../pages/seo'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
@@ -7,15 +7,15 @@ import {
     intro, header, img, imgContain
 } from './ideas/index.module.css'
 
-// Usage example in a GatsbyJS component
+
 const Random = () => {
 
     const randomNumberInt = Math.floor(Math.random() * 4) + 1;
     const randomNumber = randomNumberInt.toString();
 
     const data = useStaticQuery(graphql`
-    query ($randomNumber: String) {
-        allMdx(filter: {frontmatter: {num: {eq: $randomNumber}}}) {
+    query {
+        allMdx {
             nodes {
               frontmatter {
                 desc
