@@ -1,15 +1,12 @@
 import { useState } from 'react'
 import * as React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import {
-    search_button, search_container, grid_container, grid_item
-} from './search_layout.module.css'
-import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { search_button, search_container, grid_container, grid_item } from './search_layout.module.css'
+import { getImage } from 'gatsby-plugin-image'
 
 const SearchLayout = () => {
     const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState([]);
-  
     const data = useStaticQuery(graphql`
       query {
         allMdx {

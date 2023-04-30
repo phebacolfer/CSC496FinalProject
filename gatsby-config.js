@@ -21,3 +21,4 @@
   'gatsby-plugin-react-helmet',
 ],
 };
+
