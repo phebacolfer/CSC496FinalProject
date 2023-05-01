@@ -31,7 +31,7 @@ const SearchLayout = () => {
     `);
   
     const handleSearch = () => {
-      // Filter the nodes to only include those with a matching title
+
       const filteredNodes = data.allMdx.nodes.filter((node) =>
         node.frontmatter.title.toLowerCase().includes(searchValue.toLowerCase())
       );
@@ -40,7 +40,7 @@ const SearchLayout = () => {
     };
   
     const handleChange = (event) => {
-      // Update the search value in the state as it changes
+
       setSearchValue(event.target.value);
     };
   
@@ -49,9 +49,9 @@ const SearchLayout = () => {
         <div className={search_container}>
           <input
             type="text"
-            id="search-input"
+            id="searchInput"
             placeholder="Search by keyword..."
-            onChange={handleChange} // Add an onChange event handler to handle input changes
+            onChange={handleChange} 
           />
           <button
             className={search_button}
