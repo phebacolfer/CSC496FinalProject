@@ -2,8 +2,8 @@
  * @type {import('gatsby').GatsbyConfig}
  */
  module.exports = {
+  pathPrefix: "/CSC496FinalProject",
   siteMetadata: {
-    pathPrefix: "/CSC496FinalProject",
     title: `Activity Planner`,
     siteUrl: `https://www.github.com/phebacolfer/CSC496FinalProject`
   },
