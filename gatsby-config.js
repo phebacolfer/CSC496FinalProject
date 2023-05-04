@@ -4,7 +4,7 @@
  module.exports = {
   siteMetadata: {
     title: `Activity Planner`,
-    pathPrefix: "/outings",
+    pathPrefix: "/CSC496FinalProject",
   },
   plugins: [    
   "gatsby-plugin-image",
