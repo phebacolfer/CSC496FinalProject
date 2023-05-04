@@ -5,6 +5,7 @@
   siteMetadata: {
     title: `Activity Planner`,
     pathPrefix: "/CSC496FinalProject",
+    siteUrl: `https://www.github.com/phebacolfer/CSC496FinalProject`,
   },
   plugins: [    
   "gatsby-plugin-image",
